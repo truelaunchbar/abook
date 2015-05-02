@@ -1,0 +1,167 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="blue.css" />
+</head>
+<body>
+	<div class="name">
+		{displayname}
+		{ifnotempty:nickname}
+		({nickname})
+		{endif}
+	</div>
+	<div class="data">
+		{ifnotempty:photo}
+		<div class="image">
+			<img class="photo" src="{imgsrc:photo}" />
+		</div>
+		{endif}
+		<div class="fields">
+			{ifnotempty:phone1}
+			<div>
+				<span><img src="{imgsrc:phonetype1}" /></span>
+				<span>{phone1} {phonenote1}</span>
+			</div>
+			{endif}
+			{ifnotempty:phone2}
+			<div>
+				<span><img src="{imgsrc:phonetype2}" /></span>
+				<span>{phone2} {phonenote2}</span>
+			</div>
+			{endif}
+			{ifnotempty:phone3}
+			<div>
+				<span><img src="{imgsrc:phonetype3}" /></span>
+				<span>{phone3} {phonenote3}</span>
+			</div>
+			{endif}
+			{ifnotempty:phone4}
+			<div>
+				<span><img src="{imgsrc:phonetype4}" /></span>
+				<span>{phone4} {phonenote4}</span>
+			</div>
+			{endif}
+			{ifnotempty:phone5}
+			<div>
+				<span><img src="{imgsrc:phonetype5}" /></span>
+				<span>{phone5} {phonenote5}</span>
+			</div>
+			{endif}
+			{ifnotempty:phone6}
+			<div>
+				<span><img src="{imgsrc:phonetype6}" /></span>
+				<span>{phone6} {phonenote6}</span>
+			</div>
+			{endif}
+			{ifnotempty:phone7}
+			<div>
+				<span><img src="{imgsrc:phonetype7}" /></span>
+				<span>{phone7} {phonenote7}</span>
+			</div>
+			{endif}
+			{ifnotempty:email}
+			<div>
+				<span><img src="{imgsrc:email}" /></span>
+				<span><a href="mailto:{src:email}">{src:email}</a></span>
+			</div>
+			{endif}
+			{ifnotempty:emailadd}
+			<div>
+				<span><img src="{imgsrc:emailadd}" /></span>
+				<span><a href="mailto:{src:emailadd}">{src:emailadd}</a></span>
+			</div>
+			{endif}
+			{ifnotempty:url}
+			<div>
+				<span><img src="{imgsrc:url}" /></span>
+				<span><a href="{src:url}">{label:url}</a></span>
+			</div>
+			{endif}
+			{ifnotempty:urlhome}
+			<div>
+				<span><img src="{imgsrc:urlhome}" /></span>
+				<span><a href="{src:urlhome}">{label:urlhome}</a></span>
+			</div>
+			{endif}
+			{ifnotempty:urlwork}
+			<div>
+				<span><img src="{imgsrc:urlwork}" /></span>
+				<span><a href="{src:urlwork}">{label:urlwork}</a></span>
+			</div>
+			{endif}
+			{ifnotempty:urlblog}
+			<div>
+				<span><img src="{imgsrc:urlblog}" /></span>
+				<span><a href="{src:urlblog}">{label:urlblog}</a></span>
+			</div>
+			{endif}
+			{ifnotempty:urlprofile}
+			<div>
+				<span><img src="{imgsrc:urlprofile}" /></span>
+				<span><a href="{src:urlprofile}">{label:urlprofile}</a></span>
+			</div>
+			{endif}
+			{ifnotempty:skype}
+			<div>
+				<span><img src="{imgsrc:skype}" /></span>
+				<span>{skype}</span>
+			</div>
+			{endif}
+		</div>
+		<div class="clear"></div>
+		{ifnotempty:urltwitter:urlfacebook:urllinkedin:urlyoutube:urlgplus:urlinstagram:urlvk:urlinstagram:urlflickr:urllivejournal}
+		<div class="social">
+			{ifnotempty:urlfacebook}<a href="{src:urlfacebook}"><img src="facebook.png"/></a>{endif}
+			{ifnotempty:urltwitter}<a href="{src:urltwitter}"><img src="twitter.png"/></a>{endif}
+			{ifnotempty:urlgplus}<a href="{src:urlgplus}"><img src="gplus.png"/></a>{endif}
+			{ifnotempty:urllinkedin}<a href="{src:urllinkedin}"><img src="linkedin.png"/></a>{endif}
+			{ifnotempty:urlvk}<a href="{src:urlvk}"><img src="vk.png"/></a>{endif}
+			{ifnotempty:urlyoutube}<a href="{src:urlyoutube}"><img src="youtube.png"/></a>{endif}
+			{ifnotempty:urlinstagram}<a href="{src:urlinstagram}"><img src="instagram.png"/></a>{endif}
+			{ifnotempty:urlflickr}<a href="{src:urlflickr}"><img src="flickr.png"/></a>{endif}
+			{ifnotempty:urllivejournal}<a href="{src:urllivejournal}"><img src="livejournal.png"/></a>{endif}
+		</div>
+		{endif}
+		{ifnotempty:homeaddress}
+		<div class="address">
+			<div class="addrlabel"><img src="home.png"/> {label:homeaddress}</div>
+			{ifnotempty:home_address}
+			<div class="addrline">{home_address}</div>
+			{endif}
+			{ifnotempty:home_address2}
+			<div class="addrline">{home_address2}</div>
+			{endif}
+			<div class="addrline">
+				{ifnotempty:home_city}{home_city}{endif}{ifnotempty:home_state}, {home_state}{endif}
+			</div>
+			<div class="addrline">
+				{ifnotempty:home_country}{home_country}{endif}{ifnotempty:home_zip}, {home_zip}{endif}
+			</div>
+		</div>
+		{endif}
+		{ifnotempty:workaddress}
+		<div class="address">
+			<div class="addrlabel"><img src="work.png"/> {label:workaddress}</div>
+			{ifnotempty:work_address}
+			<div class="addrline">{work_address}</div>
+			{endif}
+			{ifnotempty:work_address2}
+			<div class="addrline">{work_address2}</div>
+			{endif}
+			<div class="addrline">
+				{ifnotempty:work_city}{work_city}{endif}{ifnotempty:work_state}, {work_state}{endif}
+			</div>
+			<div class="addrline">
+				{ifnotempty:work_country}{work_country}{endif}{ifnotempty:work_zip}, {work_zip}{endif}
+			</div>
+		</div>
+		{endif}
+		<div class="clear"></div>
+	</div>
+	{ifnotempty:notes}
+	<div class="notes">{notes}</div>
+	{endif}
+	{ifempty:notes}
+	<div class="emptynotes"></div>
+	{endif}
+</body>
+</html>

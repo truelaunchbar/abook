@@ -1,0 +1,404 @@
+<html>
+<head>
+	<style>
+		div.abook-name
+		{
+			font-size:1.2em;
+			font-weight:bold;
+			padding:5px;
+			margin:0;
+		}
+		div.abook-data
+		{
+			padding-left:0.5em;
+			padding-right:0.5em;
+			padding-top:0.5em;
+			padding-bottom:0;
+			overflow:hidden;
+		}
+		div.abook-image
+		{
+			float:left;
+			padding-right:0.5em;
+		}
+		div.abook-fields
+		{
+			display:table;
+			float:left;
+		}
+		div.abook-fields div
+		{
+			display:table-row;
+		}
+		div.abook-fields span
+		{
+			display:table-cell;
+			padding-right:0.5em;
+		}
+		div.abook-notes
+		{
+			clear: both;
+			white-space:pre-line;
+			padding-top:0.5em;
+			padding-left:0.5em;
+			padding-right:0.5em;
+			padding-bottom:0;
+		}
+		div.abook-address
+		{
+			float:left;
+			padding-right:0.5em;
+		}
+		div.abook-addrlabel, div.abook-group-title
+		{
+			font-weight:bold;
+			font-size:1.1em;
+		}
+		.abook-clear
+		{
+			clear:both;
+		}
+		div.abook-group
+		{
+			display:table;
+		}
+		div.abook-group div
+		{
+			display:table-row;
+		}
+		div.abook-group span
+		{
+			display:table-cell;
+			padding-top: 0.2em;
+			padding-bottom: 0.2em;
+			padding-right:0.5em;
+		}
+	</style>
+</head>
+<body>
+	<div class="abook-name tlb-tip-caption-color">
+		{displayname}
+		{ifnotempty:nickname}
+		({nickname})
+		{endif}
+	</div>
+	<div class="abook-data">
+		{ifnotempty:photo}
+		<div class="abook-image">
+			<img class="abook-photo" src="{imgsrc:photo}" />
+		</div>
+		{endif}
+		<div class="abook-fields">
+			{ifnotempty:phone1}
+			<div>
+				<span><img src="{imgsrc:phonetype1}" /></span>
+				<span>{src:phone1} {phonenote1}</span>
+			</div>
+			{endif}
+			{ifnotempty:phone2}
+			<div>
+				<span><img src="{imgsrc:phonetype2}" /></span>
+				<span>{src:phone2} {phonenote2}</span>
+			</div>
+			{endif}
+			{ifnotempty:phone3}
+			<div>
+				<span><img src="{imgsrc:phonetype3}" /></span>
+				<span>{src:phone3} {phonenote3}</span>
+			</div>
+			{endif}
+			{ifnotempty:phone4}
+			<div>
+				<span><img src="{imgsrc:phonetype4}" /></span>
+				<span>{src:phone4} {phonenote4}</span>
+			</div>
+			{endif}
+			{ifnotempty:phone5}
+			<div>
+				<span><img src="{imgsrc:phonetype5}" /></span>
+				<span>{src:phone5} {phonenote5}</span>
+			</div>
+			{endif}
+			{ifnotempty:phone6}
+			<div>
+				<span><img src="{imgsrc:phonetype6}" /></span>
+				<span>{src:phone6} {phonenote6}</span>
+			</div>
+			{endif}
+			{ifnotempty:phone7}
+			<div>
+				<span><img src="{imgsrc:phonetype7}" /></span>
+				<span>{src:phone7} {phonenote7}</span>
+			</div>
+			{endif}
+			{ifnotempty:email}
+			<div>
+				<span><img src="{imgsrc:email}" /></span>
+				<span>{src:email}</span>
+			</div>
+			{endif}
+			{ifnotempty:emailadd}
+			<div>
+				<span><img src="{imgsrc:emailadd}" /></span>
+				<span>{src:emailadd}</span>
+			</div>
+			{endif}
+		</div>
+		<div class="abook-clear"></div>
+		{ifnotempty:homeaddress}
+		<div class="abook-address">
+			<div class="abook-addrlabel">{label:homeaddress}</div>
+			{ifnotempty:home_address}
+			<div class="abook-addrline">{home_address}</div>
+			{endif}
+			{ifnotempty:home_address2}
+			<div class="abook-addrline">{home_address2}</div>
+			{endif}
+			<div class="abook-addrline">
+				{ifnotempty:home_city}{home_city}{endif}{ifnotempty:home_state}, {home_state}{endif}
+			</div>
+			<div class="abook-addrline">
+				{ifnotempty:home_country}{home_country}{endif}{ifnotempty:home_zip}, {home_zip}{endif}
+			</div>
+		</div>
+		{endif}
+		{ifnotempty:workaddress}
+		<div class="abook-address">
+			<div class="abook-addrlabel">{label:workaddress}</div>
+			{ifnotempty:work_address}
+			<div class="abook-addrline">{work_address}</div>
+			{endif}
+			{ifnotempty:work_address2}
+			<div class="abook-addrline">{work_address2}</div>
+			{endif}
+			<div class="abook-addrline">
+				{ifnotempty:work_city}{work_city}{endif}{ifnotempty:work_state}, {work_state}{endif}
+			</div>
+			<div class="abook-addrline">
+				{ifnotempty:work_country}{work_country}{endif}{ifnotempty:work_zip}, {work_zip}{endif}
+			</div>
+		</div>
+		{endif}
+		<div class="abook-clear"></div>
+
+		{ifnotempty:firstname:lastname:middlename:prefixname:suffixname}
+		<hr />
+		<div class="abook-group-title">{label:name}</div>
+		<div class="abook-group">
+			{ifnotempty:prefixname}
+			<div>
+				<span>{label:prefixname}:</span>
+				<span>{prefixname}</span>
+			</div>
+			{endif}
+			{ifnotempty:firstname}
+			<div>
+				<span>{label:firstname}:</span>
+				<span>{firstname}</span>
+			</div>
+			{endif}
+			{ifnotempty:middlename}
+			<div>
+				<span>{label:middlename}:</span>
+				<span>{middlename}</span>
+			</div>
+			{endif}
+			{ifnotempty:lastname}
+			<div>
+				<span>{label:lastname}:</span>
+				<span>{lastname}</span>
+			</div>
+			{endif}
+			{ifnotempty:suffixname}
+			<div>
+				<span>{label:suffixname}:</span>
+				<span>{suffixname}</span>
+			</div>
+			{endif}
+		</div>
+		{endif}
+
+		{ifnotempty:title:role:department:organization}
+		<hr />
+		<div class="abook-group-title">{label:org}</div>
+		<div class="abook-group">
+			{ifnotempty:title}
+			<div>
+				<span>{label:title}:</span>
+				<span>{title}</span>
+			</div>
+			{endif}
+			{ifnotempty:role}
+			<div>
+				<span>{label:role}:</span>
+				<span>{role}</span>
+			</div>
+			{endif}
+			{ifnotempty:department}
+			<div>
+				<span>{label:department}:</span>
+				<span>{department}</span>
+			</div>
+			{endif}
+			{ifnotempty:organization}
+			<div>
+				<span>{label:organization}:</span>
+				<span>{organization}</span>
+			</div>
+			{endif}
+		</div>
+		{endif}
+
+		{ifnotempty:url:urlhome:urlwork:urlblog:urlprofile:urlfacebook:urltwitter:urlvk:urlgplus:urlyoutube:urlinstagram:urlflickr:urllinkedin:urllivejournal}
+		<hr />
+		<div class="abook-group-title">{label:internet}</div>
+		<div class="abook-group">
+			{ifnotempty:url}
+			<div>
+				<span>{label:url}:</span>
+				<span>{src:url}</span>
+			</div>
+			{endif}
+			{ifnotempty:urlhome}
+			<div>
+				<span>{label:urlhome}:</span>
+				<span>{src:urlhome}</span>
+			</div>
+			{endif}
+			{ifnotempty:urlwork}
+			<div>
+				<span>{label:urlwork}:</span>
+				<span>{src:urlwork}</span>
+			</div>
+			{endif}
+			{ifnotempty:urlblog}
+			<div>
+				<span>{label:urlblog}:</span>
+				<span>{src:urlblog}</span>
+			</div>
+			{endif}
+			{ifnotempty:urlprofile}
+			<div>
+				<span>{label:urlprofile}:</span>
+				<span>{src:urlprofile}</span>
+			</div>
+			{endif}
+			{ifnotempty:urlfacebook}
+			<div>
+				<span>{label:urlfacebook}:</span>
+				<span>{src:urlfacebook}</span>
+			</div>
+			{endif}
+			{ifnotempty:urltwitter}
+			<div>
+				<span>{label:urltwitter}:</span>
+				<span>{src:urltwitter}</span>
+			</div>
+			{endif}
+			{ifnotempty:urlvk}
+			<div>
+				<span>{label:urlvk}:</span>
+				<span>{src:urlvk}</span>
+			</div>
+			{endif}
+			{ifnotempty:urlgplus}
+			<div>
+				<span>{label:urlgplus}:</span>
+				<span>{src:urlgplus}</span>
+			</div>
+			{endif}
+			{ifnotempty:urlyoutube}
+			<div>
+				<span>{label:urlyoutube}:</span>
+				<span>{src:urlyoutube}</span>
+			</div>
+			{endif}
+			{ifnotempty:urlinstagram}
+			<div>
+				<span>{label:urlinstagram}:</span>
+				<span>{src:urlinstagram}</span>
+			</div>
+			{endif}
+			{ifnotempty:urlflickr}
+			<div>
+				<span>{label:urlflickr}:</span>
+				<span>{src:urlflickr}</span>
+			</div>
+			{endif}
+			{ifnotempty:urllinkedin}
+			<div>
+				<span>{label:urllinkedin}:</span>
+				<span>{src:urllinkedin}</span>
+			</div>
+			{endif}
+			{ifnotempty:urllivejournal}
+			<div>
+				<span>{label:urllivejournal}:</span>
+				<span>{src:urllivejournal}</span>
+			</div>
+			{endif}
+		</div>
+		{endif}
+
+		{ifnotempty:im:icq:aim:yahoo:skype:qq:jabber}
+		<hr />
+		<div class="abook-group-title">{label:instmsg}</div>
+		<div class="abook-group">
+			{ifnotempty:skype}
+			<div>
+				<span><img src="{imgsrc:skype}" /></span>
+				<span>{label:skype}:</span>
+				<span>{src:skype}</span>
+			</div>
+			{endif}
+			{ifnotempty:icq}
+			<div>
+				<span><img src="{imgsrc:icq}" /></span>
+				<span>{label:icq}:</span>
+				<span>{src:icq}</span>
+			</div>
+			{endif}
+			{ifnotempty:aim}
+			<div>
+				<span><img src="{imgsrc:aim}" /></span>
+				<span>{label:aim}:</span>
+				<span>{src:aim}</span>
+			</div>
+			{endif}
+			{ifnotempty:yahoo}
+			<div>
+				<span><img src="{imgsrc:yahoo}" /></span>
+				<span>{label:yahoo}:</span>
+				<span>{src:yahoo}</span>
+			</div>
+			{endif}
+			{ifnotempty:qq}
+			<div>
+				<span><img src="{imgsrc:qq}" /></span>
+				<span>{label:qq}:</span>
+				<span>{src:qq}</span>
+			</div>
+			{endif}
+			{ifnotempty:jabber}
+			<div>
+				<span><img src="{imgsrc:jabber}" /></span>
+				<span>{label:jabber}:</span>
+				<span>{src:jabber}</span>
+			</div>
+			{endif}
+			{ifnotempty:im}
+			<div>
+				<span><img src="{imgsrc:im}" /></span>
+				<span>{label:im}:</span>
+				<span>{src:im}</span>
+			</div>
+			{endif}
+		</div>
+		{endif}
+	</div>
+
+	{ifnotempty:notes}
+	<div class="abook-notes"><hr />{notes}</div>
+	{endif}
+</body>
+</html>

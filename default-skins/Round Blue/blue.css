@@ -1,0 +1,103 @@
+div.name
+{
+    font-size:1.2em;
+    font-weight:bold;
+    padding:5px;
+    margin:0;
+    background-color:royalblue;
+    color:white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top:2px solid royalblue;
+    border-left:2px solid royalblue;
+    border-right:2px solid royalblue;
+}
+div.data
+{
+    padding:0.5em;
+    background-color:white;
+    color:black;
+    overflow:hidden;
+    border-left:2px solid royalblue;
+    border-right:2px solid royalblue;
+}
+div.data a
+{
+    color: black!important;
+}
+div.image
+{
+    float:left;
+    padding-right:0.5em;
+}
+img.photo
+{
+    border:4px solid royalblue;
+    border-radius:50%;
+}
+div.fields
+{
+    display:table;
+    float:left;
+}
+div.fields div
+{
+    display:table-row;
+}
+div.fields span
+{
+    display:table-cell;
+}
+div.fields span:last-child
+{
+    padding-left:0.5em;
+}
+div.notes
+{
+    clear: both;
+    white-space:pre-line;
+    background-color:royalblue;
+    padding-bottom:10px;
+    padding-left:1em;
+    padding-right:1em;
+    padding-top:1em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color:white;
+    border-bottom:2px solid royalblue;
+    border-left:2px solid royalblue;
+    border-right:2px solid royalblue;
+}
+div.emptynotes
+{
+    clear: both;
+    white-space:pre-line;
+    background-color:white;
+    background-color:royalblue;
+    height:10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom:2px solid royalblue;
+    border-left:2px solid royalblue;
+    border-right:2px solid royalblue;
+}
+div.address
+{
+    float:left;
+    padding-right:0.5em;
+}
+div.addrlabel
+{
+    font-weight:bold;
+    font-size:1.1em;
+}
+.clear
+{
+    clear:both;
+}
+div.social
+{
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+    text-align:center;
+}

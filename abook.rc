@@ -1,0 +1,238 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,1,0,0
+ PRODUCTVERSION 4,1,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "CompanyName", "Tordex"
+            VALUE "FileDescription", "Address Book for True Launch Bar"
+            VALUE "FileVersion", "4.1.0.0"
+            VALUE "InternalName", "abook"
+            VALUE "LegalCopyright", "Copyright (C) Tordex 2005-2011"
+            VALUE "OriginalFilename", "abook.dll"
+            VALUE "ProductName", "Address Book for True Launch Bar"
+            VALUE "ProductVersion", "4.1.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "icon.ico"
+IDI_GROUPICON           ICON                    "group_icon.ico"
+IDI_CONTACT             ICON                    "contact.ico"
+IDI_IMPORT              ICON                    "import.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEMPLATE
+//
+
+DEFAULT.HTML            TEMPLATE                "templates\\default.html"
+TIPS.HTML               TEMPLATE                "templates\\tips.html"
+TIPS-INT.HTML           TEMPLATE                "templates\\tips-int.html"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// XUILIB
+//
+
+IMPORT.XML              XUILIB                  "xuilib\\import.xml"
+PROPERTIES.XML          XUILIB                  "xuilib\\properties.xml"
+PROG.XML                XUILIB                  "xuilib\\prog.xml"
+CROPPHOTO.XML           XUILIB                  "xuilib\\cropphoto.xml"
+CONTACT.XML             XUILIB                  "xuilib\\contact.xml"
+TEMPLATE.XML            XUILIB                  "xuilib\\template.xml"
+TEMPLATE-NAME.XML       XUILIB                  "xuilib\\template-name.xml"
+ABOUT.PNG               XUILIB                  "xuilib\\images\\about.png"
+OPTIONS.PNG             XUILIB                  "xuilib\\images\\options.png"
+TEMPLATES.PNG           XUILIB                  "xuilib\\images\\templates.png"
+LOGO.PNG                XUILIB                  "xuilib\\images\\logo.png"
+DELHKBG.PNG             XUILIB                  "xuilib\\images\\delhkbg.png"
+DELHKICON.PNG           XUILIB                  "xuilib\\images\\delhkicon.png"
+DELHKICON16.PNG         XUILIB                  "xuilib\\images\\delhkicon16.png"
+DELHKICON20.PNG         XUILIB                  "xuilib\\images\\delhkicon20.png"
+ERROR.PNG               XUILIB                  "xuilib\\images\\error.png"
+TB-DELETE.PNG           XUILIB                  "xuilib\\images\\tb-delete.png"
+TB-FIELDS.PNG           XUILIB                  "xuilib\\images\\tb-fields.png"
+TB-IMAGES.PNG           XUILIB                  "xuilib\\images\\tb-images.png"
+TB-LABELS.PNG           XUILIB                  "xuilib\\images\\tb-labels.png"
+TB-LOAD.PNG             XUILIB                  "xuilib\\images\\tb-load.png"
+TB-NOTEMPTY.PNG         XUILIB                  "xuilib\\images\\tb-notempty.png"
+TB-SAVE.PNG             XUILIB                  "xuilib\\images\\tb-save.png"
+PHOTO.PNG               XUILIB                  "xuilib\\images\\photo.png"
+PROGRAMS.PNG            XUILIB                  "xuilib\\images\\programs.png"
+PHOTOMIN.PNG            XUILIB                  "xuilib\\images\\photomin.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_GRAB                CURSOR                  "cursors\\GRAB.CUR"
+IDC_TAKE                CURSOR                  "cursors\\TAKE.CUR"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
+LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// CSS
+//
+
+MASTER.CSS              CSS                     "litehtml\\include\\master.css"
+ABOOK.CSS               CSS                     "css\\abook.css"
+#endif    // Neutral (Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DEFIMAGES
+//
+
+FAX.PNG                 DEFIMAGES               "respng\\fax.png"
+MOBILE.PNG              DEFIMAGES               "respng\\mobilephone.png"
+PRIMARYPHONE.PNG        DEFIMAGES               "respng\\telephone.png"
+PHONE.PNG               DEFIMAGES               "respng\\telephone.png"
+NOTE.PNG                DEFIMAGES               "respng\\note.png"
+HOMEPHONE.PNG           DEFIMAGES               "respng\\homephone.png"
+WORKPHONE.PNG           DEFIMAGES               "respng\\workphone.png"
+ICON                    DEFIMAGES               "deficon.png"
+URL.PNG                 DEFIMAGES               "respng\\url.png"
+EMAIL.PNG               DEFIMAGES               "respng\\email.png"
+EMAILADD.PNG            DEFIMAGES               "respng\\email.png"
+ICQ.PNG                 DEFIMAGES               "respng\\icq.png"
+GTALK.PNG               DEFIMAGES               "respng\\gtalk.png"
+AIM.PNG                 DEFIMAGES               "respng\\aim.png"
+MSN.PNG                 DEFIMAGES               "respng\\msn.png"
+JABBER.PNG              DEFIMAGES               "respng\\jabber.png"
+SKYPE.PNG               DEFIMAGES               "respng\\skype.png"
+YAHOO.PNG               DEFIMAGES               "respng\\yahoo.png"
+QQ.PNG                  DEFIMAGES               "respng\\qq.png"
+URLBLOG.PNG             DEFIMAGES               "respng\\blog.png"
+URLPROFILE.PNG          DEFIMAGES               "respng\\profile.png"
+URLHOME.PNG             DEFIMAGES               "respng\\url.png"
+URLWORK.PNG             DEFIMAGES               "respng\\url.png"
+DEFPHOTO.PNG            DEFIMAGES               "respng\\defphoto.png"
+FACEBOOK.PNG            DEFIMAGES               "respng\\facebook.png"
+FLICKR.PNG              DEFIMAGES               "respng\\flickr.png"
+GPLUS.PNG               DEFIMAGES               "respng\\gplus.png"
+INSTAGRAM.PNG           DEFIMAGES               "respng\\instagram.png"
+LINKEDIN.PNG            DEFIMAGES               "respng\\linkedin.png"
+LIVEJOURNAL.PNG         DEFIMAGES               "respng\\livejournal.png"
+TWITTER.PNG             DEFIMAGES               "respng\\twitter.png"
+VK.PNG                  DEFIMAGES               "respng\\vk.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDR_DEFICON             PNG                     "deficon.png"
+IDR_NEW                 PNG                     "respng\\new.png"
+IDR_IMPORT              PNG                     "respng\\import.png"
+IDR_PHOTO               PNG                     "respng\\photo.png"
+IDR_PREVIEW_PHOTO       PNG                     "respng\\preview-photo.jpg"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

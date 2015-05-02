@@ -1,0 +1,100 @@
+<html>
+<head>
+	<style>
+		div.name
+		{
+		    font-size:1.2em;
+		    font-weight:bold;
+			padding-left:5px;
+			padding-right:5px;
+			padding-bottom:5px;
+			padding-top:0px;
+		    margin:0;
+		}
+		div.container
+		{
+		    overflow:hidden;
+		}
+		div.image
+		{
+		    float:left;
+		    padding-right:0.5em;
+		}
+		div.fields
+		{
+		    display:table;
+		    float:left;
+		}
+		div.fields div
+		{
+		    display:table-row;
+		}
+		div.fields span
+		{
+		    display:table-cell;
+		}
+		div.fields span:last-child
+		{
+		    padding-left:0.5em;
+		}
+		div.notes
+		{
+		    clear: both;
+		    white-space:pre-line;
+			padding-top:0;
+			padding-left:0.5em;
+			padding-right:0.5em;
+			padding-bottom:0.5em;
+		}
+		.clear
+		{
+		    clear:both;
+		}
+		hr
+		{
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		{ifnotempty:photo}
+		<div class="image">
+			<img class="photo" src="{imgsrc:photo}" />
+		</div>
+		{endif}
+		<div class="name">
+			{displayname}
+			{ifnotempty:nickname}
+			({nickname})
+			{endif}
+		</div>
+		<div class="fields">
+			{ifnotempty:phone1}
+			<div>
+				<span><img src="{imgsrc:phonetype1}" /></span>
+				<span>{phone1} {phonenote1}</span>
+			</div>
+			{endif}
+			{ifnotempty:phone2}
+			<div>
+				<span><img src="{imgsrc:phonetype2}" /></span>
+				<span>{phone2} {phonenote2}</span>
+			</div>
+			{endif}
+			{ifnotempty:email}
+			<div>
+				<span><img src="{imgsrc:email}" /></span>
+				<span><a href="mailto:{src:email}">{src:email}</a></span>
+			</div>
+			{endif}
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	{ifnotempty:notes}
+	<div class="notes">{notes}</div>
+	{endif}
+	<hr class="def-color-bdr"/>
+</body>
+</html>

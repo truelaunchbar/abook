@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="xuilib">
+      <UniqueIdentifier>{2d117d7e-3b59-447a-aefd-397909b3667b}</UniqueIdentifier>
+      <Extensions>*.xml</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="abook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="abookbtn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ABookEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlphaGroupBtn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base64.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContactDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CropPhotoDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditProgDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditTemplateDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldGroupBtn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="md5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PhotoCropper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PluginStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertiesDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RecordBtn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xuicustomlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="litehtml\containers\cairo\cairo_container.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="litehtml\containers\cairo\cairo_font.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="record.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="images_cache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLProps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="template.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="abook.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="cursors\GRAB.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="cursors\TAKE.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="litehtml\include\master.css" />
+    <None Include="css\abook.css" />
+    <None Include="templates\default.html" />
+    <None Include="templates\tips.html" />
+    <None Include="templates\tips-int.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="abookbtn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ABookEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AlphaGroupBtn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContactDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CropPhotoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditProgDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditTemplateDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldGroupBtn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glob-md5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PhotoCropper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PluginStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertiesDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RecordBtn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TxThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xuicustomlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xuistrings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="record.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="feild.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="images_cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLProps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="template.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="abook.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="contact.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="group_icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="import.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="respng\preview-photo.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ablogo.png" />
+    <Image Include="respng\about.png" />
+    <Image Include="xuilib\images\about.png" />
+    <Image Include="respng\aim.png" />
+    <Image Include="respng\blog.png" />
+    <Image Include="deficon.png" />
+    <Image Include="respng\toolbar\delete.png" />
+    <Image Include="xuilib\images\delhkbg.png" />
+    <Image Include="xuilib\images\delhkicon.png" />
+    <Image Include="xuilib\images\delhkicon16.png" />
+    <Image Include="xuilib\images\delhkicon20.png" />
+    <Image Include="respng\email.png" />
+    <Image Include="xuilib\images\error.png" />
+    <Image Include="respng\fax.png" />
+    <Image Include="respng\toolbar\fields.png" />
+    <Image Include="respng\gtalk.png" />
+    <Image Include="respng\homephone.png" />
+    <Image Include="respng\icq.png" />
+    <Image Include="respng\toolbar\images.png" />
+    <Image Include="respng\import.png" />
+    <Image Include="respng\jabber.png" />
+    <Image Include="respng\toolbar\labels.png" />
+    <Image Include="respng\toolbar\load.png" />
+    <Image Include="xuilib\images\logo.png" />
+    <Image Include="respng\mobilephone.png" />
+    <Image Include="respng\msn.png" />
+    <Image Include="respng\new.png" />
+    <Image Include="respng\note.png" />
+    <Image Include="respng\toolbar\notempty.png" />
+    <Image Include="respng\options.png" />
+    <Image Include="xuilib\images\options.png" />
+    <Image Include="respng\photo.png" />
+    <Image Include="xuilib\images\photo.png" />
+    <Image Include="xuilib\images\photomin.png" />
+    <Image Include="respng\profile.png" />
+    <Image Include="xuilib\images\programs.png" />
+    <Image Include="respng\qq.png" />
+    <Image Include="respng\toolbar\save.png" />
+    <Image Include="respng\skype.png" />
+    <Image Include="xuilib\images\tb-delete.png" />
+    <Image Include="xuilib\images\tb-fields.png" />
+    <Image Include="xuilib\images\tb-images.png" />
+    <Image Include="xuilib\images\tb-labels.png" />
+    <Image Include="xuilib\images\tb-load.png" />
+    <Image Include="xuilib\images\tb-notempty.png" />
+    <Image Include="xuilib\images\tb-save.png" />
+    <Image Include="respng\telephone.png" />
+    <Image Include="xuilib\images\templates.png" />
+    <Image Include="respng\templates.png" />
+    <Image Include="respng\url.png" />
+    <Image Include="respng\workphone.png" />
+    <Image Include="respng\yahoo.png" />
+    <Image Include="respng\defphoto.png" />
+    <Image Include="respng\facebook.png" />
+    <Image Include="respng\flickr.png" />
+    <Image Include="respng\gplus.png" />
+    <Image Include="respng\instagram.png" />
+    <Image Include="respng\linkedin.png" />
+    <Image Include="respng\livejournal.png" />
+    <Image Include="respng\twitter.png" />
+    <Image Include="respng\vk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="xuilib\contact.xml">
+      <Filter>xuilib</Filter>
+    </Xml>
+    <Xml Include="xuilib\cropphoto.xml">
+      <Filter>xuilib</Filter>
+    </Xml>
+    <Xml Include="xuilib\import.xml">
+      <Filter>xuilib</Filter>
+    </Xml>
+    <Xml Include="xuilib\prog.xml">
+      <Filter>xuilib</Filter>
+    </Xml>
+    <Xml Include="xuilib\properties.xml">
+      <Filter>xuilib</Filter>
+    </Xml>
+    <Xml Include="xuilib\template-name.xml">
+      <Filter>xuilib</Filter>
+    </Xml>
+    <Xml Include="xuilib\template.xml">
+      <Filter>xuilib</Filter>
+    </Xml>
+    <Xml Include="xuilib\xuiproject.xml">
+      <Filter>xuilib</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="templates\default.txt" />
+    <Text Include="templates\extra-photo.txt" />
+    <Text Include="templates\mini.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="abook.dll.manifest" />
+  </ItemGroup>
+</Project>

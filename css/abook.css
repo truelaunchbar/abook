@@ -1,0 +1,28 @@
+body {
+    color:$color$;
+    margin:0;
+    padding:0;
+}
+
+a {
+    color:$color$;
+}
+
+td {
+    vertical-align:top;
+}
+
+.def-color-bg
+{
+    background-color: $color$;
+}
+
+.def-color
+{
+    color: $color$;
+}
+
+.def-color-bdr
+{
+    border-color: $color$;
+}

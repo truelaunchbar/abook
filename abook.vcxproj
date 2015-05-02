@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CF85389F-E006-4D8D-9766-80BFADEA3FED}</ProjectGuid>
+    <RootNamespace>abook</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\tlb-pdk-public\src\simpledib;..\..\tlb-pdk-public\src\txdib;..\..\tlb-pdk-public\include;litehtml\include;..\..\tlb-pdk-public\src\cairo\src;litehtml\containers\cairo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;abook_EXPORTS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Msimg32.lib;version.lib;jpeg.lib;png.lib;zlib.lib;cximage.lib;comctl32.lib;uxtheme.lib;tlbpdk.lib;tlbpdklib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)abook.dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\tlb-pdk-public\lib\$(Configuration)\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>abook.def</ModuleDefinitionFile>
+      <DelayLoadDLLs>cairo.dll;freeimage.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)abook.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(OutDir)abook.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>abook.dll.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\tlb-pdk-public\src\simpledib;..\..\tlb-pdk-public\src\txdib;..\..\tlb-pdk-public\include;litehtml\include;..\..\tlb-pdk-public\src\cairo\src;litehtml\containers\cairo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;abook_EXPORTS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>litehtml.lib;Msimg32.lib;version.lib;comctl32.lib;uxtheme.lib;tlbpdk.lib;tlbpdklib.lib;gdiplus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)abook.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);..\..\tlb-pdk-public\lib\$(Configuration)\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>abook.def</ModuleDefinitionFile>
+      <DelayLoadDLLs>cairo.dll;freeimage.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)abook.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(OutDir)abook.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>abook.dll.x64.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\tlb-pdk-public\src\simpledib;..\..\tlb-pdk-public\src\txdib;..\..\tlb-pdk-public\include;litehtml\include;..\..\tlb-pdk-public\src\cairo\src;litehtml\containers\cairo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;abook_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>litehtml.lib;gdiplus.lib;Msimg32.lib;version.lib;comctl32.lib;uxtheme.lib;tlbpdk.lib;tlbpdklib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)abook.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);..\..\tlb-pdk-public\lib\$(Configuration)\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>abook.def</ModuleDefinitionFile>
+      <DelayLoadDLLs>cairo.dll;freeimage.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(OutDir)abook.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>abook.dll.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+    <PostBuildEvent>
+      <Command>..\..\CodeSign\signcode.bat "$(TargetPath)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\tlb-pdk-public\src\simpledib;..\..\tlb-pdk-public\src\txdib;..\..\tlb-pdk-public\include;litehtml\include;..\..\tlb-pdk-public\src\cairo\src;litehtml\containers\cairo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;abook_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>litehtml.lib;gdiplus.lib;Msimg32.lib;version.lib;comctl32.lib;uxtheme.lib;tlbpdk.lib;tlbpdklib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)abook.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);..\..\tlb-pdk-public\lib\$(Configuration)\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>abook.def</ModuleDefinitionFile>
+      <DelayLoadDLLs>cairo.dll;freeimage.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(OutDir)abook.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>abook.dll.x64.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+    <PostBuildEvent>
+      <Command>..\..\CodeSign\signcode.bat "$(TargetPath)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="abook.cpp" />
+    <ClCompile Include="abookbtn.cpp" />
+    <ClCompile Include="ABookEngine.cpp" />
+    <ClCompile Include="AlphaGroupBtn.cpp" />
+    <ClCompile Include="applications.cpp" />
+    <ClCompile Include="base64.cpp" />
+    <ClCompile Include="ContactDlg.cpp" />
+    <ClCompile Include="CropPhotoDlg.cpp" />
+    <ClCompile Include="dc.cpp" />
+    <ClCompile Include="EditProgDlg.cpp" />
+    <ClCompile Include="EditTemplateDlg.cpp" />
+    <ClCompile Include="FieldGroupBtn.cpp" />
+    <ClCompile Include="images_cache.cpp" />
+    <ClCompile Include="ImportDlg.cpp" />
+    <ClCompile Include="litehtml\containers\cairo\cairo_container.cpp" />
+    <ClCompile Include="litehtml\containers\cairo\cairo_font.cpp" />
+    <ClCompile Include="md5.cpp" />
+    <ClCompile Include="PhotoCropper.cpp" />
+    <ClCompile Include="PluginStream.cpp" />
+    <ClCompile Include="PropertiesDlg.cpp" />
+    <ClCompile Include="RecordBtn.cpp" />
+    <ClCompile Include="record.cpp" />
+    <ClCompile Include="template.cpp" />
+    <ClCompile Include="TxThread.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="vcard.cpp" />
+    <ClCompile Include="XMLProps.cpp" />
+    <ClCompile Include="xuicustomlist.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="abook.def" />
+    <None Include="css\abook.css" />
+    <None Include="cursors\GRAB.CUR" />
+    <None Include="cursors\TAKE.CUR" />
+    <None Include="litehtml\include\master.css" />
+    <None Include="templates\default.html" />
+    <None Include="templates\tips-int.html" />
+    <None Include="templates\tips.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="abookbtn.h" />
+    <ClInclude Include="ABookEngine.h" />
+    <ClInclude Include="AlphaGroupBtn.h" />
+    <ClInclude Include="applications.h" />
+    <ClInclude Include="base64.h" />
+    <ClInclude Include="ContactDlg.h" />
+    <ClInclude Include="CropPhotoDlg.h" />
+    <ClInclude Include="dc.h" />
+    <ClInclude Include="EditProgDlg.h" />
+    <ClInclude Include="EditTemplateDlg.h" />
+    <ClInclude Include="feild.h" />
+    <ClInclude Include="FieldGroupBtn.h" />
+    <ClInclude Include="glob-md5.h" />
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="images_cache.h" />
+    <ClInclude Include="ImportDlg.h" />
+    <ClInclude Include="md5.h" />
+    <ClInclude Include="PhotoCropper.h" />
+    <ClInclude Include="PluginStream.h" />
+    <ClInclude Include="PropertiesDlg.h" />
+    <ClInclude Include="record.h" />
+    <ClInclude Include="RecordBtn.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="template.h" />
+    <ClInclude Include="TxThread.h" />
+    <ClInclude Include="vcard.h" />
+    <ClInclude Include="XMLProps.h" />
+    <ClInclude Include="xuicustomlist.h" />
+    <ClInclude Include="xuistrings.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="abook.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ablogo.png" />
+    <Image Include="contact.ico" />
+    <Image Include="deficon.png" />
+    <Image Include="group_icon.ico" />
+    <Image Include="icon.ico" />
+    <Image Include="import.ico" />
+    <Image Include="respng\about.png" />
+    <Image Include="respng\aim.png" />
+    <Image Include="respng\blog.png" />
+    <Image Include="respng\defphoto.png" />
+    <Image Include="respng\email.png" />
+    <Image Include="respng\facebook.png" />
+    <Image Include="respng\fax.png" />
+    <Image Include="respng\flickr.png" />
+    <Image Include="respng\gplus.png" />
+    <Image Include="respng\gtalk.png" />
+    <Image Include="respng\homephone.png" />
+    <Image Include="respng\icq.png" />
+    <Image Include="respng\import.png" />
+    <Image Include="respng\instagram.png" />
+    <Image Include="respng\jabber.png" />
+    <Image Include="respng\linkedin.png" />
+    <Image Include="respng\livejournal.png" />
+    <Image Include="respng\mobilephone.png" />
+    <Image Include="respng\msn.png" />
+    <Image Include="respng\new.png" />
+    <Image Include="respng\note.png" />
+    <Image Include="respng\options.png" />
+    <Image Include="respng\photo.png" />
+    <Image Include="respng\preview-photo.jpg" />
+    <Image Include="respng\profile.png" />
+    <Image Include="respng\qq.png" />
+    <Image Include="respng\skype.png" />
+    <Image Include="respng\telephone.png" />
+    <Image Include="respng\templates.png" />
+    <Image Include="respng\toolbar\delete.png" />
+    <Image Include="respng\toolbar\fields.png" />
+    <Image Include="respng\toolbar\images.png" />
+    <Image Include="respng\toolbar\labels.png" />
+    <Image Include="respng\toolbar\load.png" />
+    <Image Include="respng\toolbar\notempty.png" />
+    <Image Include="respng\toolbar\save.png" />
+    <Image Include="respng\twitter.png" />
+    <Image Include="respng\url.png" />
+    <Image Include="respng\vk.png" />
+    <Image Include="respng\workphone.png" />
+    <Image Include="respng\yahoo.png" />
+    <Image Include="xuilib\images\about.png" />
+    <Image Include="xuilib\images\delhkbg.png" />
+    <Image Include="xuilib\images\delhkicon.png" />
+    <Image Include="xuilib\images\delhkicon16.png" />
+    <Image Include="xuilib\images\delhkicon20.png" />
+    <Image Include="xuilib\images\error.png" />
+    <Image Include="xuilib\images\logo.png" />
+    <Image Include="xuilib\images\options.png" />
+    <Image Include="xuilib\images\photo.png" />
+    <Image Include="xuilib\images\photomin.png" />
+    <Image Include="xuilib\images\programs.png" />
+    <Image Include="xuilib\images\tb-delete.png" />
+    <Image Include="xuilib\images\tb-fields.png" />
+    <Image Include="xuilib\images\tb-images.png" />
+    <Image Include="xuilib\images\tb-labels.png" />
+    <Image Include="xuilib\images\tb-load.png" />
+    <Image Include="xuilib\images\tb-notempty.png" />
+    <Image Include="xuilib\images\tb-save.png" />
+    <Image Include="xuilib\images\templates.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="xuilib\contact.xml" />
+    <Xml Include="xuilib\cropphoto.xml" />
+    <Xml Include="xuilib\import.xml" />
+    <Xml Include="xuilib\prog.xml" />
+    <Xml Include="xuilib\properties.xml" />
+    <Xml Include="xuilib\template-name.xml" />
+    <Xml Include="xuilib\template.xml" />
+    <Xml Include="xuilib\xuiproject.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="abook.dll.manifest">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="templates\default.txt" />
+    <Text Include="templates\extra-photo.txt" />
+    <Text Include="templates\mini.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="abook.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,59 @@
+<html>
+<head>
+	<style>
+		.data
+		{
+			overflow: hidden;
+			background-color: orange;
+			height:5em;
+			border: 2px solid orange;
+			border-top-left-radius: 2.5em;
+			border-bottom-left-radius: 2.5em;
+		}
+		a
+		{
+			color: white !important;
+		}
+		.photo
+		{
+			height: 100%;
+			float: left;
+		}
+		.name
+		{
+			font-size: 1.2em;
+			font-weight: bold;
+			line-height: 1.2em;
+		}
+		.phone
+		{
+			font-size: 1.8em;
+			font-weight: bold;
+			line-height: 1.2em;
+		}
+		.text
+		{
+			padding-left: 0.5em;
+			height: 100%;
+			float: left;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="data">
+		<img class="photo" src="{imgsrc:photo}"/>
+		<div class="text">
+			<div class="name">
+				{displayname}
+				{ifnotempty:nickname}
+				({nickname})
+				{endif}
+			</div>
+			<div class="phone">
+				{ifnotempty:phone1}{phone1}{endif}
+			</div>
+		</div>
+	</div>
+</body>
+</html>
